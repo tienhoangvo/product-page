@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 16px;
+  position: sticky;
+
+  &::after {
+    position: absolute;
+    content: ".";
+    display: block;
+    height: 2px;
+    background-color: var(--color-grayish-blue);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .navigationLink {
+      color: var(--color-very-dark-blue);
+      padding-block: 32px;
+      
+    }
+  }
+
+  .menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .cartBtn {
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    
+    .userBtn {
+      
+    }
+  }
+
+
+}
+
+.btn {
+  background: unset;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+// .btnIconButton {
+//   border-radius: 50%;
+//   aspect-ratio: 1/1;
+// }

@@ -1,0 +1,119 @@
+.productDetailsCard {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 32px;
+
+  width: 1200px;
+
+  margin-inline: auto;
+  margin-top: 80px;
+
+  .productInfo {
+    padding: 80px;
+
+    .brand {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--color-orange)
+    }
+
+    .title {
+      font-size: 32px;
+      color: var(--color-black)
+    }
+
+    .description {
+      color: var(--color-very-dark-blue)
+    }
+
+    .priceInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 32px;
+    }
+    .priceAfterDiscount {
+      display: flex;
+      gap: 8px;
+      font-weight: bold;
+      align-items: center;
+      margin: 0;
+
+      .price {
+        font-size: 32px;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+      }
+
+      .discount {
+        font-size: 14px;
+        background-color: var(--color-pale-orange);
+
+        color: var(--color-orange);
+
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+
+    }
+
+    .originalPrice {
+      color: var(--color-very-dark-blue);
+    }
+
+    .actions {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-top: 32px;
+      gap: 16px;
+
+      .cartQuantityBtns {
+        background-color: #f1f3f5;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 8px;
+        font-weight: 700;
+
+        .increaseBtn, .decreaseBtn {
+          font-family: inherit;
+          border: none;
+          background: none;
+          font-weight: 700;
+          font-size: 20px;
+          color: var(--color-orange);
+          height: 100%;
+          cursor: pointer;;
+          padding-block: 8px;
+        }
+
+        .increaseBtn {
+          padding-right: 16px;
+        }
+
+        .decreaseBtn {
+          padding-left: 16px;
+        }
+      }
+
+      .addToCartBtn {
+        font-family: inherit;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--color-orange);
+        color: var(--color-white);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 32px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  
+}
